@@ -18,10 +18,10 @@ int main()
     // Creating output variables and formulas for them
     int Calculator_Gx,Calculator_Gy;
     Calculator_Gx = (Mx + Xmax) * (Gx_maximum/(Xmax*2));
-    Calculator_Gy = Gy - 2.5 * (Gy_maximum + Ymax);
+    Calculator_Gy = Gy_maximum - 2.5 * (My + Ymax);
 
     // Final output
-    cout << "Coordinates in graphical System are: G(" << Calculator_Mx <<"," << Calculator_My << ")";
+    cout << "Coordinates in graphical System are: G(" << Calculator_Gx <<"," << Calculator_Gy << ")";
 
     return 0;
 }
